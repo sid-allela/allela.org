@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allela: the Operational Flight Recorder for AI</title>
+<meta name="description" content="Allela keeps a tamper-evident, independently timestamped record of your AI decisions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #14213d;
+    --navy-deep: #0e182e;
+    --paper: #f3ede1;
+    --paper-dim: #c9c3b6;
+    --line: #2c3a5a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--navy); color: var(--paper); }
+  body {
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    font-size: 1.1875rem;
+    line-height: 1.6;
+    padding: clamp(2rem, 6vw, 5rem) 1.5rem;
+  }
+  main { max-width: 38rem; margin: 0 auto; }
+  h1 {
+    font-weight: 500;
+    font-size: clamp(3.5rem, 14vw, 7rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.75rem;
+  }
+  .tagline { font-size: 1.375rem; font-style: italic; color: var(--paper-dim); margin: 0 0 3rem; }
+  h2 { font-weight: 500; font-size: 1.375rem; margin: 2.5rem 0 0.5rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--paper); text-underline-offset: 0.2em; }
+  a:focus-visible { outline: 2px solid var(--paper); outline-offset: 3px; }
+  code {
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 0.95em;
+    background: var(--navy-deep);
+    padding: 0.1em 0.4em;
+  }
+  footer {
+    max-width: 38rem;
+    margin: 4rem auto 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.95rem;
+    color: var(--paper-dim);
+  }
+  footer a { color: var(--paper-dim); margin-right: 1.25rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Allela</h1>
+  <p class="tagline">The Operational Flight Recorder for AI.</p>
+
+  <h2>What we do</h2>
+  <p>Allela is an independent evidence layer for AI decisions. Each decision you instrument is hashed inside your own environment, signed, and timestamped independently by DigiCert. If anyone changes the record later, the change can be detected.</p>
+  <p>Only hashes and non-sensitive metadata leave your environment. Raw prompts and outputs never do.</p>
+
+  <h2>What we don't do</h2>
+  <p>Allela proves your records haven't been altered. It doesn't explain why a model made a decision, and it doesn't, on its own, make you compliant with any regulation.</p>
+
+  <h2>Who it's for</h2>
+  <p>Compliance and risk teams at EU companies running high-risk AI: credit decisioning, insurance underwriting, and emergency triage.</p>
+
+  <h2>Who we are</h2>
+  <p>Allela is an early-stage company looking for its first design partners. The SDK is open source under Apache 2.0: <code>pip install allela</code> (<a href="https://pypi.org/project/allela/">PyPI</a>).</p>
+
+  <h2>Contact</h2>
+  <p>Paid design-partner pilots and questions: <a href="mailto:sid@allela.org">sid@allela.org</a></p>
+</main>
+<footer>
+  <a href="privacy.html">Privacy notice</a>
+  <span>&copy; 2026 Allela</span>
+</footer>
+</body>
+</html>
